@@ -1,0 +1,31 @@
+[package]
+name = "cli"
+version = "0.1.0"
+description = "OCIV Gateway Program CLI"
+authors = ["Daniel Kelleher <daniel@identity.com>"]
+repository = "https://github.com/miracle-land/on-chain-identity-gateway"
+license = "Apache-2.0"
+edition = "2018"
+
+[[bin]]
+name = "gateway"
+path = "src/bin/main.rs"
+
+[dependencies]
+clap = "3.0.0-beta.1"
+debug_print = "1.0.0"
+rand = { version = "0.7.3" }
+miraland-client = "1.14.17-rc5"
+miraland-gateway = { path = "../../integration-lib" }
+miraland-gateway-program = { path = "../", features = ["no-entrypoint"]  }
+miraland-program = "1.14.17-rc5"
+miraland-sdk = "1.14.17-rc5"
+thiserror = "1.0"
+
+[dev-dependencies]
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
