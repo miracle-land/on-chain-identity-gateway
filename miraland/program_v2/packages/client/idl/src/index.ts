@@ -1,1 +1,1 @@
-export * from './solana_anchor_gateway';
+export * from './miraland_anchor_gateway';

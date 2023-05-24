@@ -1,16 +1,16 @@
 [package]
-name = "solana_anchor_gateway"
+name = "miraland-anchor-gateway"
 version = "2.0.5"
-description = "Solana Identity Gateway"
+description = "Miraland Identity Gateway"
 edition = "2021"
 authors = ["Identity.com <daniel@identity.com>"]
 license = "MIT"
-keywords = ["solana", "identity", "gateway"]
+keywords = ["miraland", "identity", "gateway"]
 homepage = "https://www.identity.com"
 
 [lib]
 crate-type = ["cdylib", "lib"]
-name = "solana_anchor_gateway"
+name = "miraland_anchor_gateway"
 
 [features]
 no-entrypoint = []
@@ -23,9 +23,9 @@ default = []
 overflow-checks = true
 
 [dependencies]
-anchor-lang = "0.27.0"
+solarti-anchor-lang = "0.26.0"
 bitflags = "1.3.2"
 borsh = "0.9.3"
-anchor-spl = "0.27.0"
-spl-token = "3.3.1"
-solana-program = "1.14.16"
+solarti-anchor-spl = "0.26.0"
+spl-token = { package = "solarti-token", version = "3.5.4", features = ["no-entrypoint"] }
+miraland-program = "1.14.17-rc5"

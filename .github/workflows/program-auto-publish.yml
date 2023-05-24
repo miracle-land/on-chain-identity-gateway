@@ -22,6 +22,6 @@ jobs:
       rust-version: "stable"
       working-directory: "./solana/program_v2"
       solana-environment: "devnet"
-      program-binary: "target/deploy/solana_anchor_gateway.so"
+      program-binary: "target/deploy/miraland_anchor_gateway.so"
     secrets:
       program-authority: ${{ secrets.SOLANA_PROGRAM_AUTHORITY }}

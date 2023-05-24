@@ -19,7 +19,7 @@ pub mod util;
 declare_id!("gate2TBGydKNyMNUqz64s8bz4uaWS9PNreMbmAjb1Ft");
 
 #[program]
-pub mod solana_anchor_gateway {
+pub mod miraland_anchor_gateway {
     use super::*;
 
     pub fn create_network(

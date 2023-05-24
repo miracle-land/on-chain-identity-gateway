@@ -5,11 +5,11 @@ types = "packages/client/idl/src/"
 seeds = false
 
 [programs.localnet]
-solana_anchor_gateway = "gate2TBGydKNyMNUqz64s8bz4uaWS9PNreMbmAjb1Ft"
+miraland_anchor_gateway = "gate2TBGydKNyMNUqz64s8bz4uaWS9PNreMbmAjb1Ft"
 [programs.devnet]
-solana_anchor_gateway = "gate2TBGydKNyMNUqz64s8bz4uaWS9PNreMbmAjb1Ft"
+miraland_anchor_gateway = "gate2TBGydKNyMNUqz64s8bz4uaWS9PNreMbmAjb1Ft"
 [programs.mainnet]
-solana_anchor_gateway = "gate2TBGydKNyMNUqz64s8bz4uaWS9PNreMbmAjb1Ft"
+miraland_anchor_gateway = "gate2TBGydKNyMNUqz64s8bz4uaWS9PNreMbmAjb1Ft"
 
 [registry]
 url = "https://api.apr.dev"
