@@ -1,7 +1,7 @@
 import { Commitment, PublicKey } from '@solana/web3.js';
 
 export const GATEWAY_PROGRAM = new PublicKey(
-  'gate2TBGydKNyMNUqz64s8bz4uaWS9PNreMbmAjb1Ft'
+  'gtw2v8LNMDhBQZKLzz4PJioY8Z1bHtVHoeucvMTxPZv'
 );
 
 export const GATEKEEPER_SEED = 'gw-gatekeeper';

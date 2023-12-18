@@ -1,4 +1,4 @@
-#![deny(unaligned_references)]
+// #![deny(unaligned_references)]
 #![allow(clippy::try_err)]
 
 #[macro_use]
@@ -371,7 +371,7 @@ pub mod tests {
         token.gatekeeper_network = network;
         let gateway_token = get_gateway_token_address_with_seed(&owner, &None, &network);
         let expire = get_expire_address_with_seed(&network);
-        let mut token_data = token.try_to_vec().unwrap();
+        let mut token_data = borsh::to_vec(&token).unwrap();
         let result = Gateway::verify_and_expire_token_with_eval(
             AccountInfo::new(
                 &Gateway::program_id(),

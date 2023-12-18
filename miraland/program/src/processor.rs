@@ -528,7 +528,7 @@ pub mod tests {
         let process_result = process_instruction(
             &owner,
             accounts.as_slice(),
-            &instruction.try_to_vec().unwrap(),
+            &borsh::to_vec(&instruction).unwrap(),
         );
 
         assert!(matches!(
@@ -591,7 +591,7 @@ pub mod tests {
         let process_result = process_instruction(
             &owner,
             accounts.as_slice(),
-            &instruction.try_to_vec().unwrap(),
+            &borsh::to_vec(&instruction).unwrap(),
         );
 
         assert!(matches!(

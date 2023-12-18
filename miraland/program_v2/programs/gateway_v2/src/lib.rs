@@ -16,7 +16,7 @@ mod instructions;
 pub mod state;
 pub mod util;
 
-declare_id!("gate2TBGydKNyMNUqz64s8bz4uaWS9PNreMbmAjb1Ft");
+declare_id!("gtw2v8LNMDhBQZKLzz4PJioY8Z1bHtVHoeucvMTxPZv");
 
 #[program]
 pub mod miraland_anchor_gateway {

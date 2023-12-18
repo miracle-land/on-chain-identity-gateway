@@ -1,9 +1,11 @@
 //! Borsh helpers
 
 use borsh::{
-    maybestd::io::{Error, Write},
-    BorshDeserialize, BorshSerialize,
+    io::{Error, Write},
+    BorshDeserialize, BorshSerialize
 };
+
+pub use borsh::to_vec;
 
 /// Deserializes something and allows for incomplete reading
 pub fn try_from_slice_incomplete<T: BorshDeserialize>(data: &[u8]) -> Result<T, Error> {
